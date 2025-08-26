@@ -13,13 +13,12 @@ This repository contains a complete GPIO demo for Raspberry Pi 5, including:
 ## Repository Structure
 
 ```
-gpio\_led\_switch
-
+gpio_led_switch\
 gpio_led_switch.dts           # Combined button + LED overlay
-gpio_led_switch\_driver.c      # Kernel module (LED character device driver)
-gpio_led_switch\_user.c        # User-space program (reads button, controls LED)
-Makefile            # Build rules
-README.md           # Documentation
+gpio_led_switch_driver.c      # Kernel module (LED character device driver)
+gpio_led_switch_user.c        # User-space program (reads button, controls LED)
+Makefile                      # Build rules
+README.md                     # Documentation
 
 ````
 ---
