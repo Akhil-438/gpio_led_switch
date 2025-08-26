@@ -3,15 +3,14 @@
 
 This repository contains a complete GPIO demo for Raspberry Pi 5, including:
 
-- A **button overlay** that generates input events when a button is pressed.
-- An **LED overlay and driver** to control an LED via a character device.
-- A **user-space application** that reads button events and switches the LED on/off.
+ A **button overlay** that generates input events when a button is pressed.
+ An **LED overlay and driver** to control an LED via a character device.
+ A **user-space application** that reads button events and switches the LED on/off.
 
 ---
-
+```
 ## Repository Structure
 
-```
 ```
 gpio\_led\_switch
 
