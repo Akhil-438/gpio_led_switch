@@ -12,7 +12,7 @@ This repository contains a complete GPIO demo for Raspberry Pi 5, including:
 ## Repository Structure
 
 ```
-
+```
 gpio\_led\_switch
 
 gpio_led_switch.dts           # Combined button + LED overlay
@@ -22,7 +22,6 @@ Makefile            # Build rules
 README.md           # Documentation
 
 ````
-
 ---
 
 ## Features
