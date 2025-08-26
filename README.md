@@ -1,5 +1,3 @@
-Absolutely! Here’s your README with **numbered steps** for clarity and better flow:
-
 ```markdown
 # GPIO Demo: Button and LED on Raspberry Pi 5
 
