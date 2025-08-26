@@ -130,6 +130,3 @@ sudo ./gpio_led_switch_user
 ## Author
 
 **Akhilesh Kakarla**
-
-```
-
