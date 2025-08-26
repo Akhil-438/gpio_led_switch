@@ -1,5 +1,3 @@
-```markdown
-```
 ## GPIO Demo: Button and LED on Raspberry Pi 5
 
 This repository contains a complete GPIO demo for Raspberry Pi 5, including:
