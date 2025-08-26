@@ -1,5 +1,6 @@
 ```markdown
-# GPIO Demo: Button and LED on Raspberry Pi 5
+```
+## GPIO Demo: Button and LED on Raspberry Pi 5
 
 This repository contains a complete GPIO demo for Raspberry Pi 5, including:
 
@@ -8,7 +9,7 @@ This repository contains a complete GPIO demo for Raspberry Pi 5, including:
  A **user-space application** that reads button events and switches the LED on/off.
 
 ---
-```
+
 ## Repository Structure
 
 ```
