@@ -1,0 +1,49 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2835";
+
+    /* ---------------- Button fragment ---------------- */
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            keys: gpio-keys {
+                compatible = "gpio-keys";
+
+                demo_button: button@17 {
+                    label = "demo-button";
+                    linux,code = <28>;           // KEY_ENTER
+                    gpios = <&gpio 17 1>;        // GPIO17 active low
+                    debounce-interval = <50>;    // 50 ms
+                    pinctrl-names = "default";
+                    pinctrl-0 = <&demo_button_pins>;
+                };
+            };
+        };
+    };
+
+    fragment@1 {
+        target = <&pio>;
+        __overlay__ {
+            demo_button_pins: demo_button_pins {
+                brcm,pins = <17>;
+                brcm,function = <0>;   /* Input */
+                brcm,pull = <2>;       /* Pull-up */
+            };
+        };
+    };
+
+    /* ---------------- LED fragment ---------------- */
+    fragment@2 {
+        target-path = "/";
+        __overlay__ {
+            gpiodemo@0 {
+                compatible = "gpiodemo";
+                status = "okay";
+                led-gpios = <&gpio 16 0>;   // GPIO16 active high
+            };
+        };
+    };
+};
+
